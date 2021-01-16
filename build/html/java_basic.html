@@ -1,0 +1,582 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Java Questions &mdash; Java Revision 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script src="_static/clipboard.min.js"></script>
+        <script src="_static/copybutton.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Java 8 Quick Revision’s documentation!" href="j8_notes.html" />
+    <link rel="prev" title="Welcome to Java Quick Revision’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-wordmark-light.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Java Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#java-platform">Java Platform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wrapper-classes">Wrapper Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#strings">Strings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#object-oriented-programming-basics">Object oriented programming basics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-object-oriented-concepts">Advanced object oriented concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modifiers">Modifiers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conditions-loops">conditions &amp; loops</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exception-handling">Exception handling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#miscellaneous-topics">Miscellaneous topics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collections">Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-collections">Advanced collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generics">Generics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multi-threading">Multi threading</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functional-programming-lamdba-expressions-and-streams">Functional Programming - Lamdba expressions and Streams</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-are-intermediate-operations-in-streams">what are intermediate operations in streams?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-features">New Features</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="j8_notes.html">Java 8 Quick Revision’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interview.html">Spring Interview Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mysql.html">Mysql Interview Questions</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Java Revision</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Java Questions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/java_basic.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="java-questions">
+<h1>Java Questions<a class="headerlink" href="#java-questions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="java-platform">
+<h2>Java Platform<a class="headerlink" href="#java-platform" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Why is Java so popular?</p></li>
+<li><p>What is platform independence?</p></li>
+<li><p>What is bytecode?</p></li>
+<li><p>Compare JDK vs JVM vs JRE</p></li>
+<li><p>What are the important differences between C++ and Java?</p></li>
+<li><p>What is the role for a classloader in Java?</p></li>
+</ol>
+</div>
+<div class="section" id="wrapper-classes">
+<h2>Wrapper Classes<a class="headerlink" href="#wrapper-classes" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What are Wrapper classes?</p></li>
+<li><p>Why do we need Wrapper classes in Java?</p></li>
+<li><p>What are the different ways of creating Wrapper class instances?</p></li>
+<li><p>What are differences in the two ways of creating Wrapper classes?</p></li>
+<li><p>What is auto boxing?</p></li>
+<li><p>What are the advantages of auto boxing?</p></li>
+<li><p>What is casting?</p></li>
+<li><p>What is implicit casting?</p></li>
+<li><p>What is explicit casting?</p></li>
+</ol>
+</div>
+<div class="section" id="strings">
+<h2>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Are all String’s immutable?</p></li>
+<li><dl>
+<dt>Where are String values stored in memory?</dt><dd><div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p>Heap memory &amp; stack memory</p></li>
+</ul>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>Why should you be careful about String concatenation(+) operator in loops?</p>
+<blockquote>
+<div><div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<ul class="simple">
+<li><p>str1 = str2 + str2; … If you concatenate Stings in loops for each iteration a new intermediate object is created in the String constant pool. This is not recommended as it causes memory issues. Therefore, concatenating strings in loops as shown in the following example is not recommended.</p></li>
+</ul>
+</div>
+</div></blockquote>
+</li>
+<li><dl>
+<dt>How do you solve above problem?</dt><dd><div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Using string builder &amp; string buffer</p>
+</div>
+</dd>
+</dl>
+</li>
+<li><p>What are differences between String and StringBuffer?</p></li>
+<li><p>What are differences between StringBuilder and StringBuffer?</p></li>
+<li><p>Can you give examples of different utility methods in String class?</p></li>
+</ol>
+<p><a class="reference external" href="https://www.youtube.com/watch?v=hdgRaJ-G5DE">https://www.youtube.com/watch?v=hdgRaJ-G5DE</a></p>
+</div>
+<div class="section" id="object-oriented-programming-basics">
+<h2>Object oriented programming basics<a class="headerlink" href="#object-oriented-programming-basics" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What is a class?</p></li>
+<li><p>What is an object?</p></li>
+<li><p>What is state of an object?</p></li>
+<li><p>What is behavior of an object?</p></li>
+<li><p>What is the super class of every class in Java?</p></li>
+<li><p>Explain about toString method ?</p></li>
+<li><p>What is the use of equals method in Java?</p></li>
+<li><p>What are the important things to consider when implementing equals method?</p></li>
+<li><p>What is the Hashcode method used for in Java?</p></li>
+<li><p>Explain inheritance with examples .</p></li>
+<li><p>What is method overloading?</p></li>
+<li><p>What is method overriding?</p></li>
+<li><p>Can super class reference variable can hold an object of sub class?</p></li>
+<li><p>Is multiple inheritance allowed in Java?</p></li>
+<li><p>What is an interface?</p></li>
+<li><p>How do you define an interface?</p></li>
+<li><p>How do you implement an interface?</p></li>
+<li><p>Can you explain a few tricky things about interfaces?</p></li>
+<li><p>Can you extend an interface?</p></li>
+<li><p>Can a class extend multiple interfaces?</p></li>
+<li><p>What is an abstract class?</p></li>
+<li><p>When do you use an abstract class?</p></li>
+<li><p>How do you define an abstract method?</p></li>
+<li><p>Compare abstract class vs interface?</p></li>
+<li><p>What is a constructor?</p></li>
+<li><p>What is a default constructor?</p></li>
+<li><p>Will this code compile?</p></li>
+<li><p>How do you call a super class constructor from a constructor?</p></li>
+<li><p>Will this code compile?</p></li>
+<li><p>What is the use of this()?</p></li>
+<li><p>Can a constructor be called directly from a method?</p></li>
+<li><p>Is a super class constructor called even when there is no explicit call from a sub class constructor?</p></li>
+</ol>
+</div>
+<div class="section" id="advanced-object-oriented-concepts">
+<h2>Advanced object oriented concepts<a class="headerlink" href="#advanced-object-oriented-concepts" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What is polymorphism?</p></li>
+<li><p>What is the use of instanceof operator in Java?</p></li>
+<li><p>What is coupling?</p></li>
+<li><p>What is cohesion?</p></li>
+<li><p>What is encapsulation?</p></li>
+<li><p>What is an inner class?</p></li>
+<li><p>What is a static inner class?</p></li>
+<li><p>Can you create an inner class inside a method?</p></li>
+<li><p>What is an anonymous class?</p></li>
+</ol>
+</div>
+<div class="section" id="modifiers">
+<h2>Modifiers<a class="headerlink" href="#modifiers" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What is default class modifier?</p></li>
+<li><p>What is private access modifier?</p></li>
+<li><p>What is default or package access modifier?</p></li>
+<li><p>What is protected access modifier?</p></li>
+<li><p>What is public access modifier?</p></li>
+<li><p>What access types of variables can be accessed from a class in same package?</p></li>
+<li><p>What access types of variables can be accessed from a class in different package?</p></li>
+<li><p>What access types of variables can be accessed from a sub class in same package?</p></li>
+<li><p>What access types of variables can be accessed from a sub class in different package?</p></li>
+<li><p>What is the use of a final modifier on a class?</p></li>
+<li><p>What is the use of a final modifier on a method?</p></li>
+<li><p>What is a final variable?</p></li>
+<li><p>What is a final argument?</p></li>
+<li><p>What happens when a variable is marked as volatile?</p></li>
+<li><p>What is a static variable?</p></li>
+</ol>
+</div>
+<div class="section" id="conditions-loops">
+<h2>conditions &amp; loops<a class="headerlink" href="#conditions-loops" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Why should you always use blocks around if statement?</p></li>
+<li><p>Guess the output</p></li>
+<li><p>Guess the output</p></li>
+<li><p>Guess the output of this switch block .</p></li>
+<li><p>Guess the output of this switch block?</p></li>
+<li><p>Should default be the last case in a switch statement?</p></li>
+<li><p>Can a switch statement be used around a String</p></li>
+<li><p>Guess the output of this for loop</p></li>
+<li><p>What is an enhanced for loop?</p></li>
+<li><p>What is the output of the for loop below?</p></li>
+<li><p>What is the output of the program below?</p></li>
+<li><p>What is the output of the program below?</p></li>
+</ol>
+</div>
+<div class="section" id="exception-handling">
+<h2>Exception handling<a class="headerlink" href="#exception-handling" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Why is exception handling important?</p></li>
+<li><p>What design pattern is used to implement exception handling features in most languages?</p></li>
+<li><p>What is the need for finally block?</p></li>
+<li><p>In what scenarios is code in finally not executed?</p></li>
+<li><p>Will finally be executed in the program below?</p></li>
+<li><p>Is try without a catch is allowed?</p></li>
+<li><p>Is try without catch and finally allowed?</p></li>
+<li><p>Can you explain the hierarchy of exception handling classes?</p></li>
+<li><p>What is the difference between error and exception?</p></li>
+<li><p>What is the difference between checked exceptions and unchecked exceptions?</p></li>
+<li><p>How do you throw an exception from a method?</p></li>
+<li><p>What happens when you throw a checked exception from a method?</p></li>
+<li><p>What are the options you have to eliminate compilation errors when handling checked exceptions?</p></li>
+<li><p>How do you create a custom exception?</p></li>
+<li><p>How do you handle multiple exception types with same exception handling block?</p></li>
+<li><p>Can you explain about try with resources?</p></li>
+<li><p>How does try with resources work?</p></li>
+<li><p>Can you explain a few exception handling best practices?</p></li>
+</ol>
+</div>
+<div class="section" id="miscellaneous-topics">
+<h2>Miscellaneous topics<a class="headerlink" href="#miscellaneous-topics" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What are the default values in an array?</p></li>
+<li><p>How do you loop around an array using enhanced for loop?</p></li>
+<li><p>How do you print the content of an array?</p></li>
+<li><p>How do you compare two arrays?</p></li>
+<li><p>What is an enum?</p></li>
+<li><p>Can you use a switch statement around an enum?</p></li>
+<li><p>What are variable arguments or varargs?</p></li>
+<li><p>What are asserts used for?</p></li>
+<li><p>When should asserts be used?</p></li>
+<li><p>What is garbage collection?</p></li>
+<li><p>Can you explain garbage collection with an example?</p></li>
+<li><p>When is garbage collection run?</p></li>
+<li><p>What are best practices on garbage collection?</p></li>
+<li><p>What are initialization blocks?</p></li>
+<li><p>What is a static initializer?</p></li>
+<li><p>What is an instance initializer block?</p></li>
+<li><p>What is tokenizing?</p></li>
+<li><p>Can you give an example of tokenizing?</p></li>
+<li><p>What is serialization?</p></li>
+<li><p>How do you serialize an object using serializable interface?</p></li>
+<li><p>How do you de-serialize in Java?</p></li>
+<li><p>What do you do if only parts of the object have to be serialized?</p></li>
+<li><p>How do you serialize a hierarchy of objects?</p></li>
+<li><p>Are the constructors in an object invoked when it is de-serialized?</p></li>
+<li><p>Are the values of static variables stored when an object is serialized?</p></li>
+</ol>
+</div>
+<div class="section" id="collections">
+<h2>Collections<a class="headerlink" href="#collections" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Why do we need collections in Java?</p></li>
+<li><p>What are the important interfaces in the collection hierarchy?</p></li>
+<li><p>What are the important methods that are declared in the collection interface?</p></li>
+<li><p>Can you explain briefly about the List interface?</p></li>
+<li><p>Explain about ArrayList with an example?</p></li>
+<li><p>Can an ArrayList have duplicate elements?</p></li>
+<li><p>How do you iterate around an ArrayList using iterator?</p></li>
+<li><p>How do you sort an ArrayList?</p></li>
+<li><p>How do you sort elements in an ArrayList using comparable interface?</p></li>
+<li><p>How do you sort elements in an ArrayList using comparator interface?</p></li>
+<li><p>What is vector class? How is it different from an ArrayList?</p></li>
+<li><p>What is linkedList? What interfaces does it implement? How is it different from an ArrayList?</p></li>
+<li><p>Can you briefly explain about the Set interface?</p></li>
+<li><p>What are the important interfaces related to the Set interface?</p></li>
+<li><p>What is the difference between Set and sortedSet interfaces?</p></li>
+<li><p>Can you give examples of classes that implement the Set interface?</p></li>
+<li><p>What is a HashSet?</p></li>
+<li><p>What is a linkedHashSet? How is different from a HashSet?</p></li>
+<li><p>What is a TreeSet? How is different from a HashSet?</p></li>
+<li><p>Can you give examples of implementations of navigableSet?</p></li>
+<li><p>Explain briefly about Queue interface?</p></li>
+<li><p>What are the important interfaces related to the Queue interface?</p></li>
+<li><p>Explain about the Deque interface?</p></li>
+<li><p>Explain the BlockingQueue interface?</p></li>
+<li><p>What is a priorityQueue?</p></li>
+<li><p>Can you give example implementations of the BlockingQueue interface?</p></li>
+<li><p>Can you briefly explain about the Map interface?</p></li>
+<li><p>What is difference between Map and sortedMap?</p></li>
+<li><p>What is a HashMap?</p></li>
+<li><p>What are the different methods in a Hash Map?</p></li>
+<li><p>What is a TreeMap? How is different from a HashMap?</p></li>
+<li><p>Can you give an example of implementation of navigableMap interface?</p></li>
+<li><p>What are the static methods present in the collections class?</p></li>
+</ol>
+</div>
+<div class="section" id="advanced-collections">
+<h2>Advanced collections<a class="headerlink" href="#advanced-collections" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What is the difference between synchronized and concurrent collections in Java?</p></li>
+<li><p>Explain about the new concurrent collections in Java?</p></li>
+<li><p>Explain about copyonwrite concurrent collections approach?</p></li>
+<li><p>What is compareandswap approach?</p></li>
+<li><p>What is a lock? How is it different from using synchronized approach?</p></li>
+<li><p>What is initial capacity of a Java collection?</p></li>
+<li><p>What is load factor?</p></li>
+<li><p>When does a Java collection throw UnsupportedOperationException?</p></li>
+<li><p>What is difference between fail-safe and fail-fast iterators?</p></li>
+<li><p>What are atomic operations in Java?</p></li>
+<li><p>What is BlockingQueue in Java?</p></li>
+</ol>
+</div>
+<div class="section" id="generics">
+<h2>Generics<a class="headerlink" href="#generics" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What are Generics?</p></li>
+<li><p>Why do we need Generics? Can you give an example of how Generics make a program more flexible?</p></li>
+<li><p>How do you declare a generic class?</p></li>
+<li><p>What are the restrictions in using generic type that is declared in a class declaration?</p></li>
+<li><p>How can we restrict Generics to a subclass of particular class?</p></li>
+<li><p>How can we restrict Generics to a super class of particular class?</p></li>
+<li><p>Can you give an example of a generic method?</p></li>
+</ol>
+</div>
+<div class="section" id="multi-threading">
+<h2>Multi threading<a class="headerlink" href="#multi-threading" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What is the need for threads in Java?</p></li>
+<li><p>How do you create a thread?</p></li>
+<li><p>How do you create a thread by extending thread class?</p></li>
+<li><p>How do you create a thread by implementing runnable interface?</p></li>
+<li><p>How do you run a thread in Java?</p></li>
+<li><p>What are the different states of a thread?</p></li>
+<li><p>What is priority of a thread? How do you change the priority of a thread?</p></li>
+<li><p>What is executorservice?</p></li>
+<li><p>Can you give an example for executorservice?</p></li>
+<li><p>Explain different ways of creating executor services .</p></li>
+<li><p>How do you check whether an executionservice task executed successfully?</p></li>
+<li><p>What is callable? How do you execute a callable from executionservice?</p></li>
+<li><p>What is synchronization of threads?</p></li>
+<li><p>Can you give an example of a synchronized block?</p></li>
+<li><p>Can a static method be synchronized?</p></li>
+<li><p>What is the use of join method in threads?</p></li>
+<li><p>Describe a few other important methods in threads?</p></li>
+<li><p>What is a deadlock?</p></li>
+<li><p>What are the important methods in Java for inter-thread communication?</p></li>
+<li><p>What is the use of wait method?</p></li>
+<li><p>What is the use of notify method?</p></li>
+<li><p>What is the use of notifyall method?</p></li>
+<li><p>Can you write a synchronized program with wait and notify methods?</p></li>
+</ol>
+</div>
+<div class="section" id="functional-programming-lamdba-expressions-and-streams">
+<h2>Functional Programming - Lamdba expressions and Streams<a class="headerlink" href="#functional-programming-lamdba-expressions-and-streams" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What is functional programming?</p></li>
+<li><p>Can you give an example of functional programming?</p></li>
+<li><p>What is a stream?</p></li>
+<li><p>Explain about streams with an example?</p></li>
+</ol>
+</div>
+<div class="section" id="what-are-intermediate-operations-in-streams">
+<h2>what are intermediate operations in streams?<a class="headerlink" href="#what-are-intermediate-operations-in-streams" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What are terminal operations in streams?</p></li>
+<li><p>What are method references?</p></li>
+<li><p>What are lambda expressions?</p></li>
+<li><p>Can you give an example of lambda expression?</p></li>
+<li><p>Can you explain the relationship between lambda expression and functional interfaces?</p></li>
+<li><p>What is a predicate?</p></li>
+<li><p>What is the functional interface - function?</p></li>
+<li><p>What is a consumer?</p></li>
+<li><p>Can you give examples of functional interfaces with multiple arguments?</p></li>
+</ol>
+</div>
+<div class="section" id="new-features">
+<h2>New Features<a class="headerlink" href="#new-features" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>What are the new features in Java 5?</p></li>
+<li><p>What are the new features in Java 6?</p></li>
+<li><p>What are the new features in Java 7?</p></li>
+<li><p>What are the new features in Java 8?</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="j8_notes.html" class="btn btn-neutral float-right" title="Java 8 Quick Revision’s documentation!" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to Java Quick Revision’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, kkrajpurohit007
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXXXX-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>
