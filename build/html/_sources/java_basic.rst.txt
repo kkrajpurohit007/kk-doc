@@ -33,8 +33,7 @@ Strings
 	.. Hint::
 		- Heap memory & stack memory
 
-#. Why should you be careful about String concatenation(+) operator in loops?
-	
+#. Why should you be careful about String concatenation(+) operator in loops?	
 	.. Hint::
 		- str1 = str2 + str2; ... If you concatenate Stings in loops for each iteration a new intermediate object is created in the String constant pool. This is not recommended as it causes memory issues. Therefore, concatenating strings in loops as shown in the following example is not recommended.
 
@@ -46,7 +45,9 @@ Strings
 #. What are differences between StringBuilder and StringBuffer?
 #. Can you give examples of different utility methods in String class?
 
-https://www.youtube.com/watch?v=hdgRaJ-G5DE
+.. Hint::
+	- https://www.youtube.com/watch?v=hdgRaJ-G5DE
+	- https://www.youtube.com/watch?v=7Eums_vwcPs
 
 Object oriented programming basics
 ----------------------------------------------------
